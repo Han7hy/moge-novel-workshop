@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>墨阁 · 小说工坊</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<video class="cinema-vid" autoplay muted loop playsinline preload="none" poster="wallpaper/moge-cinema.jpg">
+  <source src="wallpaper/moge-cinema.mp4" type="video/mp4">
+</video>
+<div class="app">
+  <aside class="rail">
+    <div class="brand">
+      <img class="brand-logo" src="logo/moge-logo.png" alt="墨阁" onerror="this.style.display='none';document.getElementById('brandSeal').style.display='grid'">
+      <span class="seal" id="brandSeal" style="display:none">墨</span>
+      <div class="brand-t"><b>墨阁</b><small id="brandSub">小说工坊</small></div>
+    </div>
+    <div class="bookbar" id="bookBar">
+      <div class="bookbar-label">当前项目</div>
+      <button class="bookbar-btn" id="bookBtn" title="切换文库">
+        <i class="bdot"></i>
+        <span class="bookbar-name" id="bookName">我的小说</span>
+        <span class="bookbar-caret">▾</span>
+      </button>
+      <div class="bookmenu" id="bookMenu" hidden></div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="rail-stat" id="railStat"></div>
+    <div class="rail-foot">
+      <button class="icon-btn" id="themeBtn" title="切换明暗">◐</button>
+      <button class="icon-btn" id="cmdBtn" title="搜索跳转 (Ctrl+K)">⌕</button>
+      <span class="save-hint" id="saveHint">已保存</span>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="tb-left">
+        <h1 id="viewTitle">项目</h1>
+        <span class="tb-sub" id="viewSub"></span>
+      </div>
+      <div class="topbar-actions" id="topActions"></div>
+    </header>
+    <section id="view" class="view"></section>
+  </main>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toasts"></div>
+<div id="aiUndoBar"></div>
+
+<script src="js/core.js"></script>
+<script src="js/building.js"></script>
+<script src="js/prompts.js"></script>
+<script src="js/view-project.js"></script>
+<script src="js/view-import.js"></script>
+<script src="js/view-world.js"></script>
+<script src="js/view-factions.js"></script>
+<script src="js/view-characters.js"></script>
+<script src="js/atlas.js"></script>
+<script src="js/atlas-view.js"></script>
+<script src="js/view-map.js"></script>
+<script src="js/view-props.js"></script>
+<script src="js/view-outline.js"></script>
+<script src="js/view-write.js"></script>
+<script src="js/view-writer.js"></script>
+<script src="js/view-settings.js"></script>
+<script src="js/view-manuscript.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

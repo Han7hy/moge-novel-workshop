@@ -1,0 +1,24 @@
+# ========= 私人数据：绝不提交 =========
+# 你的书稿、API Key、导入的源小说、AI 生成的图片全在这里
+data/
+
+# 一次性迁移脚本（包含个人书目内容）
+migrate-to-library.js
+
+# ========= 本机调试与内部文档 =========
+HANDOFF.md
+set-smoke.yml
+.ui-backup/
+.playwright-cli/
+test/mock-log*.json
+
+# ========= 可选大资源 =========
+# 开场视频 300MB+，缺失时前端自动退回同名 .jpg 海报
+public/wallpaper/moge-cinema.mp4
+
+# ========= 常规 =========
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

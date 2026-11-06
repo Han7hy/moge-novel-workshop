@@ -1,0 +1,22 @@
+{
+  "name": "moge-novel-workshop",
+  "version": "1.0.0",
+  "description": "墨阁 · 小说工坊 —— 本地优先的 AI 长篇小说写作台：人物性格锁、双层地图、卷·情节画布、角色扮演成文、书源导入",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "novel",
+    "writing",
+    "ai",
+    "fiction",
+    "creative-writing",
+    "openai-compatible"
+  ],
+  "license": "GPL-3.0",
+  "private": false
+}
